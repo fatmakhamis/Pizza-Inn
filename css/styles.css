@@ -4,3 +4,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  min-height: 8vh;
+  background-color: bisque;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo
+{
+color: blueviolet;
+letter-spacing: 5px;
+font-size: 20px;
+}
+
+.burger div{
+width: 25px;
+height: 5px;
+background-color: blueviolet;
+margin: 7px;
+}
