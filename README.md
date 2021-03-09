@@ -1,7 +1,7 @@
 # PIZZA INN
-#### By Fatma Khamis, 26/02/2021
+#### By Fatma Khamis, 08/03/2021
 ## Description
-This web application displays services offered at Delani Studio and it also prompts the viewer to fill a form on feedback.
+This web application allow user to buy pizza of his choice choosing from a variety of toppings and make order online and can add addresinformation for delivery.
 ## Demo
 Here is a working live demo:https://fatmakhamis.github.io/IP3-FATMAKHAMIS/.
 ## Setup/Installation Requirements
