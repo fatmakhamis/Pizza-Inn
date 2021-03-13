@@ -6,6 +6,17 @@ body {
  line-height: 1.6;
   margin: 0;
 }
+/*section*/
+.section {
+  padding: 2rem 0
+}
+.section-head {
+  font-size: 2.5rem;
+  margin: 0;
+} 
+.section {
+  font-size: 2.5rem;
+}
 /*showcase*/
 #showcase 
 {
@@ -19,11 +30,28 @@ body {
   position: relative;
   overflow-y: hidden;
 }
+#showcase .container{
+  margin-top: 25vh;
+}
+#showcase .container{
+  margin-top: 25vh;
+}
+#showcase h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+#showcase h2{
+  font-size: 2rem;
+ }
+ /*utility classes*/
 .container {
   max-width: 1180px;
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
+}
+.lead{
+  font-size: 1.3rem;
 }
 /*Navigation*/
 nav {
@@ -57,9 +85,24 @@ nav a#openup {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
+  .hide-on-small{
+    display: none;
+  }
+  #showcase{
+    height: 50vh;
+  }
+  #showcase .container{
+    margin-top: 15vh;
+  }
+  #showcase h1{
+    font-size: 2rem;
+  }
+  #showcase h2{
+    font-size: 1rem;
+  }
   h1 {
-    font-size: 2.8em;
+    font-size: 2.8rem;
   }
 
   nav {
