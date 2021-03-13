@@ -2,15 +2,28 @@
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #eee;
- color: blue
+ color: blue;
  line-height: 1.6;
   margin: 0;
 }
 /*showcase*/
-#showcase{
+#showcase 
+{
   margin: 0;
   padding: 0;
-  background :url('../img')no-repeat center/cover
+  background-image: url(../img/backdrop-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 /*Navigation*/
 nav {
@@ -107,87 +120,3 @@ nav a#openup {
 }
 
  
- /* @import url(./fonts.css);
-*{
-  margin: 0;
-  padding: 0;
- /* box-sizing: border-box;
-}
-.container
-{
-  justify-content: center;
-  align-items : center;
-  text-align : center;
-  color: white;
-  background-image: url(../img/backdrop-1.jpg);
-  background-repeat: no-repeat;
-  background-size : cover;
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-}
-/*#nav
-{
-  position: top;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  min-height: 8vh;
-  background-color: bisque;
-  font-family: 'Poppins', sans-serif;  
-}
-.navbar-default 
-{
-  background: transparent;
-  transition: 500ms ease;
-
-.nav-link 
-{
-  color: red;
-  text-transform: uppercase;
-}
-
-.nav-link:hover {
-  color:blue;
-  text-decoration: underline;
-}
-
-.logo
-{
-color: blueviolet;
-letter-spacing: 5px;
-font-size: 20px;
-}
-
-
-.burger .line1{
-  width: 25px;
-  height: 10px;
-  background-color: bisque;
-  margin: 7px;
-  }
-  .burger .line2{
-    width: 25px;
-    height: 10px;
-    background-color: bisque;
-    margin: 7px;
-    }
-    .burger .line3{
-      width: 25px;
-      height: 10px;
-      background-color: bisque;
-      margin: 7px;
-      }
-  /*body
-      {
-        background-color: pink;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        line-height: 1.6;
-        align-items : center;
-        text-align : center;
-      }*/
