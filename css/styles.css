@@ -1,11 +1,135 @@
-@import url(./fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #eee;
+ color: blue
+ line-height: 1.6;
+  margin: 0;
+}
+/*showcase*/
+#showcase{
+  margin: 0;
+  padding: 0;
+  background :url('../img')no-repeat center/cover
+}
+/*Navigation*/
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+ 
+ /* @import url(./fonts.css);
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+ /* box-sizing: border-box;
 }
-
-#nav
+.container
+{
+  justify-content: center;
+  align-items : center;
+  text-align : center;
+  color: white;
+  background-image: url(../img/backdrop-1.jpg);
+  background-repeat: no-repeat;
+  background-size : cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+/*#nav
 {
   position: top;
   display: flex;
@@ -13,14 +137,19 @@
   align-items: left;
   min-height: 8vh;
   background-color: bisque;
-  font-family: 'Poppins', sans-serif;
-  background: transparent;
-    
+  font-family: 'Poppins', sans-serif;  
 }
-.nav-link {
+.navbar-default 
+{
+  background: transparent;
+  transition: 500ms ease;
+
+.nav-link 
+{
   color: red;
   text-transform: uppercase;
 }
+
 .nav-link:hover {
   color:blue;
   text-decoration: underline;
@@ -62,19 +191,3 @@ font-size: 20px;
         align-items : center;
         text-align : center;
       }*/
-#backdrop
-      {
-  justify-content: center;
-  align-items : center;
-  text-align : center;
-  color: white;
-  background-image: url(../img/backdrop-1.jpg);
-  background-repeat: no-repeat;
-  /*background-color: pink;*/
-  background-size : cover;
-  height: 100vh;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-            }
