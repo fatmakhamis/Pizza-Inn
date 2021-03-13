@@ -7,12 +7,23 @@
 
 #nav
 {
+  position: top;
   display: flex;
   justify-content: space-around;
   align-items: left;
   min-height: 8vh;
   background-color: bisque;
   font-family: 'Poppins', sans-serif;
+  background: transparent;
+    
+}
+.nav-link {
+  color: red;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color:blue;
+  text-decoration: underline;
 }
 
 .logo
@@ -22,9 +33,48 @@ letter-spacing: 5px;
 font-size: 20px;
 }
 
-.burger div{
-width: 25px;
-height: 5px;
-background-color: blueviolet;
-margin: 7px;
-}
+
+.burger .line1{
+  width: 25px;
+  height: 10px;
+  background-color: bisque;
+  margin: 7px;
+  }
+  .burger .line2{
+    width: 25px;
+    height: 10px;
+    background-color: bisque;
+    margin: 7px;
+    }
+    .burger .line3{
+      width: 25px;
+      height: 10px;
+      background-color: bisque;
+      margin: 7px;
+      }
+  /*body
+      {
+        background-color: pink;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.6;
+        align-items : center;
+        text-align : center;
+      }*/
+#backdrop
+      {
+  justify-content: center;
+  align-items : center;
+  text-align : center;
+  color: white;
+  background-image: url(../img/backdrop-1.jpg);
+  background-repeat: no-repeat;
+  /*background-color: pink;*/
+  background-size : cover;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+            }
