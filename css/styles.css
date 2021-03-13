@@ -6,7 +6,6 @@
   --secondary-color:  rgb(3, 3, 90);
   --secondary-color-hover: grey;
 }
-
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #eee;
@@ -178,7 +177,8 @@ nav a#openup {
 .cf {
   zoom: 1;
 }
-/*Gallery*/@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+/*Gallery*/
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
@@ -260,7 +260,7 @@ body {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.card:nth-child(1):before {
+/*.card:nth-child(1):before {
   background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
 .card:nth-child(2):before {
@@ -271,7 +271,22 @@ body {
 }
 .card:nth-child(4):before {
   background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}*/
+.card:nth-child(1):before {
+  background-image: url(../img/hawaiian.jpg);
 }
+.card:nth-child(2):before {
+  background-image: url(../img/extravaganza.jpg);
+}
+
+.card:nth-child(3):before {
+  background-image: url(../img/magarita.jpg);
+}
+
+.card:nth-child(4):before {
+  background-image: url(../img/vegetarian.jpg);
+}
+
 
 .content {
   position: relative;
