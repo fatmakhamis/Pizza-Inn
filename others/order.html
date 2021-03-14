@@ -12,3 +12,105 @@
 	    <title>ORDER</title>
 	</head>
 	<body>
+            <body class="">
+                    <!--<!-- navigation                       <div class="container-fluid">
+                       <nav class="my-2 my-md-0 me-md-3 justify-content-center">         
+                         <ul  id = "order"class="nav">
+                           <li class="nav-item">
+                               <a class="nav-link active nav-order" aria-current="page" href="../index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link nav-order" href="../index.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link nav-order" href="../index.html">Menu</a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link nav-order" href="../index.html">
+                               <i class="bi bi-cart"></i>
+                             </a>
+                           </li>
+                         </ul>
+                       </nav>
+                     </div>-->
+                     <!-- order section  -->
+                     <section class="order">
+                       <div class="container-fluid" id="order-section">
+                         <div class="card" style="width: 18rem;">
+                           <h2>ORDER PIZZA</h2>
+                           <div class="card-body">                                      
+                           <form id="form">
+                    <!-- type of pizza  -->
+                             <label for="pizza">Types of Pizza</label>
+                               <select name="pizza" id="pizza">
+                                 <option disable selected></option>
+                                 <option value="Hawaiian">Hawaiian</option>
+                                 <option value="Pepperoni">Extravaganza</option>
+                                 <option value="Margherita">Magarita</option>
+                                 <option value="Chicken">Vegetarian</option>
+                                </select><hr>
+                    <!-- Quantity -->
+                             <label for="quantity">Quantity</label>
+                               <input type="text" id="quantity" name="quantity" value=""><hr>
+                    <!-- Size  -->
+                             <label for="size">Size</label><br>
+                               <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Small">
+                             <label class="form-check-label" for="sizeSmall">Small  [Ksh.500]</label><br>                                   
+                               <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Medium ">
+                             <label class="form-check-label" for="sizeMedium">Medium [Ksh.600]</label><br>
+                               <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="large">
+                             <label class="form-check-label" for="sizeLarge"> Large [Ksh.700]</label><hr>    
+                   <!-- Crust -->
+                             <label for="crust">Crust</label><br>
+                               <input class="form-check-input" type="radio" name="Crispy" id="option1" value="Crispy">
+                             <label class="form-check-label" for="Crispy">Crispy</label> <br>                             
+                               <input class="form-check-input" type="radio" name="Stuffed" id="option1" value="Stuffed">
+                             <label class="form-check-label" for="Stuffed"> Stuffed </label><br>                            
+                               <input class="form-check-input" type="radio" name="Gluten free" id="option1" value="Gluten free">
+                             <label class="form-check-label" for="Gluten free">Gluten free</label><hr>
+                    <!-- Toppings  -->
+                             <div class="toppings">
+                               <label for="toppings">Select your toppings</label>
+                               <p>Ksh.50/ per extra topping</p>
+                                 <input type="checkbox" value="chicken" name="toppings" id="chicken">
+                               <label for="chicken">Chicken</label><br>
+                                 <input type="checkbox" value="vegetables" name="toppings" id="vegetables">
+                               <label for="vegetables">Vegetables</label><br>
+                                 <input type="checkbox" value="pineapples" name="toppings" id="pineapples">
+                               <label for="pineapples">Pineapples</label><br>
+                                 <input type="checkbox" value="mushroom" name="toppings" id="mushroom">
+                               <label for="mushroom">Mushroom</label><br>
+                                <button class="submit" onclick="submit">Submit</button>
+                             </div>
+                           </form>
+                         </div>
+                       </div>
+                    
+                   <!-- Receipt -->
+                       <div class="card" style="width: 18rem;">
+                         <h2>Bill</h2>
+                           <div id = "bill"class="card-body">
+                             <div id="show-Bill">
+                               <div class="panel panel-default">
+                                 <div class="panel-body">
+                                    <p>Toppings: <span id="displayToppings"></span></p>
+                                   <p>Size:<span id="displaySize"></span></p>
+                                   <p>Crust:<span id="displayCrust"></span></p>
+                                   <p>Total cost: <span id="displayTotalCost"></span></p>
+                                    <p> Pizza Quantity Cost:<span id="displayQuantity"></span></p>
+                                    
+                                 </div>
+                               </div>
+                             </div>                                    
+                           </div>
+                       </div>                       
+                     </div>
+                     </section>
+                   
+                   <!-- JS  -->
+                     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+                     <script src="js/scripts.js"></script>  
+                   </body>
+                   </html>
+                   
+                   

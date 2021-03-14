@@ -83,8 +83,80 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-
-
+//ODER FUNCTIONS
+//business interface
+function Pizza(toppings,size,crust) {
+  this.toppings = toppings;
+  this.size = size;
+  this.crust = crust;
+  }
+  Pizza.prototype.totalToppings = function() {
+    if(this.toppings.length != 0) {
+      var toppingPrice = this.toppings.length * 50;
+      return toppingPrice;
+    }else
+    alert("kindly choose your toppings!")
+  }
+  Pizza.prototype.pizzaSize = function () {
+    if(this.size === "Small"){
+      return 500;
+    }else if(this.size === "Medium"){
+      return 600;
+    }else if (this.size === "Large") {
+      return 700;
+    }else
+    alert("Whats the Pizza size!");
+  }
+  Pizza.prototype.crustType = function () {
+    if(this.crust === "Crispy") {
+      return 50
+    } else if (this.crust === "Stuffed") {
+      return 100
+    }else if (this.crust === "Gluten free") {
+      return 150
+    }else
+    alert("kindly choose a crust type")
+    }
+  let finalCost;
+  Pizza.prototype.totalCost = function(totalToppings, pizzaSize, crustType) {
+     finalCost = totalToppings + pizzaSize + crustType;
+    $("#displayTotalCost").html(finalCost);
+    ;
+  }
+  //user interface
+  //total price calculation 
+  var pizza, pizzaQuantity;
+  $(document).ready(function() {
+    $("#form").submit(function(event){
+      event.preventDefault();
+      $("#show-Bill").show();
+      var pizzaName = $("#pizza option:selected").val();
+      var checkedSize = $("input:radio[name=sizePizza]:checked").val();
+      var checkedCrust = $("input:radio[name=crustPizza]:checked").val();
+      var checkedToppings = [];
+      $("input:checkbox[name=toppings]:checked").each(function() {
+        checkedToppings.push($(this).val());
+      });
+      pizzaQuantity = parseInt($("#quantity").val());
+      var totalPizzaQuantity = finalCost * pizzaQuantity;
+   $("#displaySize").text(checkedSize);
+      $("#displayCrust").text(checkedCrust);
+      $("#displayName").text(pizzaName);
+      $("#displayToppings").text(checkedToppings);
+      $("#displayQuantity").text(totalPizzaQuantity);
+      pizza = new Pizza(checkedToppings,checkedSize,checkedCrust);
+      var totalToppings = pizza.totalToppings();
+      var pizzaSize = pizza.pizzaSize();
+      var crustType = pizza.crustType();
+      pizza.totalCost(pizzaSize,totalToppings,crustType);
+      console.log(pizza);
+    });
+  });
+    
+  // navigation transition
+  $(window).scroll(function(){
+    $('.navbar-default').toggleClass('scrolled', $(this).scrollTop() > 50);
+  });
 
 
             

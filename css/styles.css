@@ -476,3 +476,33 @@ form body {
 	margin-top: 20px;
 	width: 100%;
 }
+
+/* ORDER FORM*/
+.nav-order {
+  color: black;
+  margin-bottom: 40px;
+}
+.card {
+  margin-bottom: 100px;
+}
+.card-body 
+.order {
+  color: black;
+}
+.order h2 {
+  text-align: center;
+}
+.submit {
+  background:white;
+  border-radius: 10px;
+  border: 1px solid #80b784;
+  margin-top: 20px;
+}
+.submit:hover {
+  background: #383839;
+  color: #80b784;
+}
+#order-section {
+  display: flex;
+  justify-content: space-around;
+}
