@@ -1,7 +1,7 @@
 # PIZZA INN
 #### By Fatma Khamis, 08/03/2021
 ## Description
-This web application allow user to buy pizza of his choice choosing from a variety of toppings and make order online and can add addresinformation for delivery.
+This web application allow user to buy pizza of his choice choosing from a variety of toppings and make order online and can add addres information for delivery.
 ## Demo
 Here is a working live demo:https://fatmakhamis.github.io/IP3-FATMAKHAMIS/.
 ## Setup/Installation Requirements
@@ -10,12 +10,12 @@ Here is a working live demo:https://fatmakhamis.github.io/IP3-FATMAKHAMIS/.
 * Open project on VSCode
 * Start the project on live server
 ## Behavior Development Driven
-* the app prompts a user to fill feedback form 
-* the user should fill his name,email and comments 
-* the system should submit a pop up thankful message to the user
-* the system also tracks all emails and messages from the user
+* the app displays the types of pizza on offer
+* the user should fill his name,email to the sigh up page 
+* the system prompts a user to make order on the type,size and desired toppings
+* the system also calculates the bill and give the total in addition to asking for deliveries
 ## Known Bugs
-* No known bugs so far
+* you may need to double click the navigation tabs
 ## Technologies Used
 * HTML
 * CSS
@@ -28,6 +28,7 @@ To fix a abug or enhance this project,follow thw steps below:
 * make changes 
 * commit changes+push to the branch
 * create a pull request
+
 For more information dont hesitate to contact me on [email](mailto:fatmakhamis.alafif@gmail.com)
 ### License
 [MIT License](https://choosealicense.com/licenses/mit/)
