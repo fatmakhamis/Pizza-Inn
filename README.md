@@ -3,7 +3,7 @@
 ## Description
 This web application allow user to buy pizza of his choice choosing from a variety of toppings and make order online and can add addres information for delivery.
 ## Demo
-Here is a working live demo:https://fatmakhamis.github.io/IP3-FATMAKHAMIS/.
+Here is a working live demo:https://fatmakhamis.github.io/Pizza-Inn/.
 ## Setup/Installation Requirements
 * Clone the repository
 * Change directory to the project directory

@@ -81,7 +81,7 @@ nav ul {
 }
 nav li {
   display: inline;
-  float: left;
+  float:left;
 }
 nav a {
   display: inline-block;
@@ -479,8 +479,11 @@ form body {
 
 /* ORDER FORM*/
 .nav-order {
-  color: black;
-  margin-bottom: 40px;
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;;
 }
 .card {
   margin-bottom: 100px;
